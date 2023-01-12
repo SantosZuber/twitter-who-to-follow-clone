@@ -9,4 +9,4 @@ My clone:
 
 ![My Twitter 'Who to follow' section clone](https://i.imgur.com/2E9JzjO.png "My Twitter 'Who to follow' section clone. Desktop view")
 
-It is not compatible for mobile, because I cloned only the desktop view.
+It is not compatible for mobile, because I cloned the desktop view only.

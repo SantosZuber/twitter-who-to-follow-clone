@@ -1,0 +1,25 @@
+.Button {
+  border: 1px solid transparent;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.2s background-color;
+}
+.Button:hover {
+  background-color: rgb(215, 219, 220);
+}
+
+.white {
+  background-color: white;
+}
+.red {
+}
+.small {
+  height: 30px;
+  width: 70px;
+}
+.large {
+}

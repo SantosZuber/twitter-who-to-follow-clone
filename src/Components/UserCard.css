@@ -1,0 +1,47 @@
+.userCard-container {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  transition: 0.2s background-color;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.userCard-container:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.userCard-container-userinfo-avatar {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+}
+
+.userCard-container-userinfo {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.userCard-container-userinfo-names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.userCard-container-userinfo-names-fullname {
+  font-weight: 530;
+  font-size: medium;
+  text-align: left;
+}
+.userCard-container-userinfo-names-username {
+  color: rgb(113, 118, 123);
+  font-size: small;
+  text-align: left;
+}

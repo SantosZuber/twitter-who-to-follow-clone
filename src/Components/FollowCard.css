@@ -1,14 +1,19 @@
 .card-container {
   background-color: rgb(22, 24, 28);
-  min-height: 50%;
   height: auto;
   width: 50%;
+  min-width: 400px;
   max-width: 470px;
   border-radius: 16px;
   color: white;
   font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.card-container-title {
+.card-container-title-container {
+  width: 100%;
   font-weight: bold;
   font-size: larger;
   display: flex;
@@ -16,4 +21,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 14px;
+}
+.card-container-title-container-text {
+  padding-left: 14px;
 }

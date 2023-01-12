@@ -1,5 +1,18 @@
 .userCard-container {
   width: 100%;
+  height: 100px;
+  background-color: transparent;
+  transition: 0.2s background-color;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userCard-container:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+.userCard {
+  width: 90%;
   height: auto;
   background-color: transparent;
   transition: 0.2s background-color;
@@ -9,17 +22,14 @@
   justify-content: space-between;
   align-items: center;
 }
-.userCard-container:hover {
-  background-color: rgba(255, 255, 255, 0.03);
-}
 
-.userCard-container-userinfo-avatar {
+.userCard-userinfo-avatar {
   height: 70px;
   width: 70px;
   border-radius: 100%;
 }
 
-.userCard-container-userinfo {
+.userCard-userinfo {
   display: flex;
   flex-direction: row;
   gap: 14px;
@@ -27,7 +37,7 @@
   align-items: center;
 }
 
-.userCard-container-userinfo-names {
+.userCard-userinfo-names {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,13 +45,13 @@
   gap: 3px;
 }
 
-.userCard-container-userinfo-names-fullname {
+.userCard-userinfo-names-fullname {
   font-weight: 530;
   font-size: medium;
   text-align: left;
 }
-.userCard-container-userinfo-names-username {
+.userCard-userinfo-names-username {
   color: rgb(113, 118, 123);
-  font-size: small;
+  font-size: 17px;
   text-align: left;
 }

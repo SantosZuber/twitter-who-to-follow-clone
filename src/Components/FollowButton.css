@@ -1,0 +1,50 @@
+.Button {
+  border: 1px solid transparent;
+  outline: none;
+  background-color: transparent;
+  color: transparent;
+  font-weight: bold;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.2s background-color;
+}
+.FollowButton {
+  background-color: white;
+  color: black;
+  height: 30px;
+  width: 70px;
+}
+
+.FollowButton:hover {
+  background-color: rgb(215, 219, 220);
+}
+
+.FollowingButton {
+  border: 1px solid rgb(83, 100, 113);
+  color: white;
+  height: 30px;
+  width: 90px;
+}
+
+.FollowingButton:hover {
+  border-color: rgb(103, 7, 15);
+  background-color: rgba(244, 33, 46, 0.1);
+  color: red;
+  display: block;
+}
+
+.FollowingButton:hover .FollowButton-text-follow {
+  display: none;
+}
+
+.FollowingButton:hover .FollowButton-text-unfollow {
+  display: block;
+}
+
+.FollowButton-text-follow {
+  display: block;
+}
+
+.FollowButton-text-unfollow {
+  display: none;
+}

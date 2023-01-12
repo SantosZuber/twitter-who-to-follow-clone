@@ -1,25 +1,32 @@
 import "./UserCard.css";
-import { Button } from "./Button";
-export function UserCard({ username, fullname, isFollowing }) {
+import { FollowButton } from "./FollowButton";
+import { useState } from "react";
+
+export function UserCard({ username, fullname, initialFollowing }) {
+  const FollowButtonManager = () => {
+    const [isFollowing, setIsFollowing] = useState(initialFollowing);
+    function handleClick() {
+      setIsFollowing(!isFollowing);
+    }
+    return <FollowButton handleClick={handleClick} isFollowing={isFollowing} />;
+  };
   return (
     <div className="userCard-container">
-      <div className="userCard-container-userinfo">
-        <img
-          src={`https://unavatar.io/${username}`}
-          className="userCard-container-userinfo-avatar"
-        />
-        <div className="userCard-container-userinfo-names">
-          <span className="userCard-container-userinfo-names-fullname">
-            {fullname}
-          </span>
-          <span className="userCard-container-userinfo-names-username">
-            @{username}
-          </span>
+      <div className="userCard">
+        <div className="userCard-userinfo">
+          <img
+            src={`https://unavatar.io/${username}`}
+            className="userCard-userinfo-avatar"
+          />
+          <div className="userCard-userinfo-names">
+            <span className="userCard-userinfo-names-fullname">{fullname}</span>
+            <span className="userCard-userinfo-names-username">
+              @{username}
+            </span>
+          </div>
         </div>
+        <FollowButtonManager />
       </div>
-      <Button color={"white"} size={"small"}>
-        Follow
-      </Button>
     </div>
   );
 }

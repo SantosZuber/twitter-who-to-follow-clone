@@ -19,6 +19,7 @@ export function FollowCard() {
           />
         );
       })}
+      <div className="card-container-showMore"><p className="card-container-showMore-text">Show more</p></div>
     </div>
   );
 }
